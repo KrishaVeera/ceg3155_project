@@ -1,0 +1,131 @@
+# -------------------------------------------------------------------------- #
+#
+# Copyright (C) 1991-2013 Altera Corporation
+# Your use of Altera Corporation's design tools, logic functions 
+# and other software and tools, and its AMPP partner logic 
+# functions, and any output files from any of the foregoing 
+# (including device programming or simulation files), and any 
+# associated documentation or information are expressly subject 
+# to the terms and conditions of the Altera Program License 
+# Subscription Agreement, Altera MegaCore Function License 
+# Agreement, or other applicable license agreement, including, 
+# without limitation, that your use is for the sole purpose of 
+# programming logic devices manufactured by Altera and sold by 
+# Altera or its authorized distributors.  Please refer to the 
+# applicable agreement for further details.
+#
+# -------------------------------------------------------------------------- #
+#
+# Quartus II 64-Bit
+# Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+# Date created = 18:16:14  November 24, 2024
+#
+# -------------------------------------------------------------------------- #
+#
+# Notes:
+#
+# 1) The default values for assignments are stored in the file:
+#		UART_2_assignment_defaults.qdf
+#    If this file doesn't exist, see file:
+#		assignment_defaults.qdf
+#
+# 2) Altera recommends that you do not modify this file. This
+#    file is updated automatically by the Quartus II software
+#    and any changes you make may be lost or overwritten.
+#
+# -------------------------------------------------------------------------- #
+
+
+set_global_assignment -name FAMILY "Cyclone IV E"
+set_global_assignment -name DEVICE EP4CE115F29C7
+set_global_assignment -name TOP_LEVEL_ENTITY projTop
+set_global_assignment -name ORIGINAL_QUARTUS_VERSION "13.0 SP1"
+set_global_assignment -name PROJECT_CREATION_TIME_DATE "18:16:13  NOVEMBER 24, 2024"
+set_global_assignment -name LAST_QUARTUS_VERSION "13.0 SP1"
+set_global_assignment -name PROJECT_OUTPUT_DIRECTORY output_files
+set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
+set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
+set_global_assignment -name ERROR_CHECK_FREQUENCY_DIVISOR 1
+set_global_assignment -name NOMINAL_CORE_SUPPLY_VOLTAGE 1.2V
+set_global_assignment -name VHDL_FILE mux2to1_1bit.vhd
+set_global_assignment -name VHDL_FILE mux2to1_2bit.vhd
+set_global_assignment -name VHDL_FILE mux2to1_4bit.vhd
+set_global_assignment -name VHDL_FILE UARTReciever.vhd
+set_global_assignment -name VHDL_FILE counter_4bit.vhd
+set_global_assignment -name VHDL_FILE equality_Comparator_4bit.vhd
+set_global_assignment -name VHDL_FILE SerialInParallelOut_8Bit.vhd
+set_global_assignment -name VHDL_FILE dFF_8bit.vhd
+set_global_assignment -name VHDL_FILE d_FF.vhd
+set_global_assignment -name VHDL_FILE ParallelInSerialOut_8Bit.vhd
+set_global_assignment -name VHDL_FILE UARTTransmitter.vhd
+set_global_assignment -name VHDL_FILE parityGen.vhd
+set_global_assignment -name VHDL_FILE UART_top.vhd
+set_global_assignment -name VHDL_FILE BaudRateGen.vhd
+set_global_assignment -name VHDL_FILE counter_6bit.vhd
+set_global_assignment -name VHDL_FILE mux2to1_6bit.vhd
+set_global_assignment -name VHDL_FILE mux2to1_8bit.vhd
+set_global_assignment -name VHDL_FILE mux4to1_1bit.vhd
+set_global_assignment -name VHDL_FILE mux8to1_1bit.vhd
+set_global_assignment -name VHDL_FILE counter_8bit.vhd
+set_global_assignment -name VHDL_FILE equality_Comparator_6bit.vhd
+set_global_assignment -name VHDL_FILE InterruptGenerator_2.vhd
+set_global_assignment -name VHDL_FILE UARTaddressDecode.vhd
+set_global_assignment -name VHDL_FILE BCD_to_7Segment.vhd
+set_global_assignment -name VHDL_FILE debouncer.vhd
+set_global_assignment -name VHDL_FILE ../clk_div.vhd
+set_global_assignment -name VHDL_FILE enableSRLatch.vhd
+set_global_assignment -name VHDL_FILE trafficLightTopLevel.vhd
+set_global_assignment -name VHDL_FILE debuggableTrafficLightController.vhd
+set_global_assignment -name BDF_FILE projTop.bdf
+set_global_assignment -name STRATIX_DEVICE_IO_STANDARD "2.5 V"
+set_location_assignment PIN_Y2 -to GClock
+set_location_assignment PIN_Y23 -to GReset
+set_location_assignment PIN_E25 -to MSTL[2]
+set_location_assignment PIN_E22 -to MSTL[1]
+set_location_assignment PIN_E21 -to MSTL[0]
+set_location_assignment PIN_G12 -to RxD
+set_location_assignment PIN_U24 -to SegmentOut[13]
+set_location_assignment PIN_U23 -to SegmentOut[12]
+set_location_assignment PIN_W25 -to SegmentOut[11]
+set_location_assignment PIN_W22 -to SegmentOut[10]
+set_location_assignment PIN_W21 -to SegmentOut[9]
+set_location_assignment PIN_Y22 -to SegmentOut[8]
+set_location_assignment PIN_M24 -to SegmentOut[7]
+set_location_assignment PIN_H22 -to SegmentOut[6]
+set_location_assignment PIN_J22 -to SegmentOut[5]
+set_location_assignment PIN_L25 -to SegmentOut[4]
+set_location_assignment PIN_L26 -to SegmentOut[3]
+set_location_assignment PIN_E17 -to SegmentOut[2]
+set_location_assignment PIN_F22 -to SegmentOut[1]
+set_location_assignment PIN_G18 -to SegmentOut[0]
+set_location_assignment PIN_Y24 -to simClock
+set_location_assignment PIN_AA22 -to SSCS
+set_location_assignment PIN_E19 -to SSTL[2]
+set_location_assignment PIN_F19 -to SSTL[1]
+set_location_assignment PIN_G19 -to SSTL[0]
+set_location_assignment PIN_AD27 -to SW1[3]
+set_location_assignment PIN_AC27 -to SW1[2]
+set_location_assignment PIN_AC28 -to SW1[1]
+set_location_assignment PIN_AB28 -to SW1[0]
+set_location_assignment PIN_AB26 -to SW2[3]
+set_location_assignment PIN_AD26 -to SW2[2]
+set_location_assignment PIN_AC26 -to SW2[1]
+set_location_assignment PIN_AB27 -to SW2[0]
+set_location_assignment PIN_G9 -to TxD
+set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform.vwf
+set_global_assignment -name SIMULATION_MODE FUNCTIONAL
+set_global_assignment -name VECTOR_WAVEFORM_FILE output_files/Waveform.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE output_files/Waveform1.vwf
+set_global_assignment -name EDA_SIMULATION_TOOL "ModelSim-Altera (Verilog)"
+set_global_assignment -name EDA_OUTPUT_DATA_FORMAT "VERILOG HDL" -section_id eda_simulation
+set_global_assignment -name EDA_GENERATE_FUNCTIONAL_NETLIST ON -section_id eda_simulation
+set_global_assignment -name VECTOR_WAVEFORM_FILE BaudGensim.vwf
+set_global_assignment -name VHDL_FILE equality_Comparator_8bit.vhd
+set_global_assignment -name INCREMENTAL_VECTOR_INPUT_SOURCE "H:/dnyak071/Lab(DigSig2)/UART Project/BaudGensim.vwf"
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_location_assignment PIN_AB25 -to SEL[0]
+set_location_assignment PIN_AC24 -to SEL[1]
+set_location_assignment PIN_AB24 -to SEL[2]
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
